@@ -5,6 +5,8 @@ import Title from './Title';
 import Description from './Description';
 import Phone from './Phone';
 import Map from './Map';
+import RateThisService from './RateThisService';
+import RatingAndReviews from './RatingAndReviews';
 const screenHeight = Math.round(Dimensions.get('window').height);
 
 export default class VideoExample extends React.Component {
@@ -23,6 +25,8 @@ export default class VideoExample extends React.Component {
                 <Description/>
                 <Phone/>
                 <Map/>
+                <RateThisService/>
+                <RatingAndReviews/>
                
             </ScrollView>
         )

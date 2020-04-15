@@ -16,6 +16,7 @@ export default class Phone extends React.Component {
         console.log(asset, "assetasset")
         return (
             <View style={styles.mapContainer}>
+              <Text>aaa</Text>
             <MapView
               provider={PROVIDER_GOOGLE} // remove if not using Google Maps
               style={styles.map}
@@ -35,15 +36,16 @@ export default class Phone extends React.Component {
 const styles = StyleSheet.create({
     topBarContainer: {
       height: 40,
-      backgroundColor: Colors.primaryColor,
+      backgroundColor: "red",
       alignItems: 'center',
     },
-    topBarText: { color: Colors.secondaryColor, fontSize: 16, textAlign: 'center' },
+    topBarText: { color:"red", fontSize: 16, textAlign: 'center' },
     mapContainer: {
-      ...StyleSheet.absoluteFillObject,
-      flex: 0.9,
-      height: '100%',
+      // ...StyleSheet.absoluteFillObject,
+      // flex: 0.9,
+      height: 150,
       width: '100%',
+      backgroundColor:"red",
       justifyContent: 'flex-end',
       alignItems: 'center',
     },

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet, View, TouchableOpacity, Image, ScrollView, Dimensions } from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign';
+// import Map from './Map';
 const screenHeight = Math.round(Dimensions.get('window').height);
 
 export default class Phone extends React.Component {
@@ -15,13 +16,11 @@ export default class Phone extends React.Component {
         console.log(asset, "assetasset")
         return (
                 <TouchableOpacity
-                activeOpacity={0.6}
-                style={{flexDirection:"row",alignItems:"center",padding:"2%" }}>
-                 <Image style={{width:50,height:50}} source={require("../Assets/1.jpg")} />
-                <Text  style={{marginLeft:"5%"}}>+1(828) 832-4256</Text>
+                    activeOpacity={0.6}
+                    style={{ flexDirection: "row", alignItems: "center", padding: "2%" }}>
+                    <Image style={{ width: 50, height: 50 }} source={require("../Assets/1.jpg")} />
+                    <Text style={{ marginLeft: "5%" }}>+1(828) 832-4256</Text>
                 </TouchableOpacity>
-
-               
         )
     }
 }

@@ -26,9 +26,9 @@ class Home extends React.Component {
                 </View>
                 {/* Footer */}
                 <View style={{ flex: 1, backgroundColor: "brown" }}>
-                    <Button full>
-                        <Text>Go there</Text>
-                    </Button>
+                <Button rounded info style={{ justifyContent: "center" }}>
+                    <Text>GO THERE</Text>
+                </Button>
                 </View>
             </View>
         )
