@@ -25,41 +25,41 @@ export default class RatingChart extends React.Component {
                                 <Text style={{ fontSize: 42,color: Colors.primary, }}>4.2</Text>
                             </View>
                             <View style={{ flexDirection: "row", justifyContent: "flex-end",  }}>
-                                <TouchableOpacity>
+                                <View>
                                     <AntDesign
                                         name="star"
                                         size={15}
                                         style={{ color: "orange" }}
                                     />
-                                </TouchableOpacity>
-                                <TouchableOpacity>
+                                </View>
+                                <View>
                                     <AntDesign
                                         name="star"
                                         size={15}
                                         style={{ color: "orange" }}
                                     />
-                                </TouchableOpacity>
-                                <TouchableOpacity>
+                                </View>
+                                <View>
                                     <AntDesign
                                         name="star"
                                         size={15}
                                         style={{ color: "orange" }}
                                     />
-                                </TouchableOpacity>
-                                <TouchableOpacity>
+                                </View>
+                                <View>
                                     <AntDesign
                                         name="star"
                                         size={15}
                                         style={{ color: "orange" }}
                                     />
-                                </TouchableOpacity>
-                                <TouchableOpacity>
+                                </View>
+                                <View>
                                     <AntDesign
                                         name="star"
                                         size={15}
                                         style={{ color: "orange" }}
                                     />
-                                </TouchableOpacity>
+                                </View>
                             </View>
                             <View style={{  alignItems: "flex-end" }}>
                                 <Text style={{color: Colors.primary,}}>31,459</Text>

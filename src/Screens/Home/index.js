@@ -1,24 +1,11 @@
 import React from 'react'
-import { Text, StyleSheet, View, TouchableOpacity, Image, } from 'react-native'
-import {  Button } from 'native-base'
-import Head from '../../Components/Head';
+import { Text, StyleSheet, View, TouchableOpacity, } from 'react-native'
 import { connect } from 'react-redux';
-import Footer from '../../Components/Footer';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AppContent from '../../Components/AppContent';
-import Video, { ScrollView, Container } from 'react-native-af-video-player'
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-class Home extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
-    render() {
-        const { asset } = this.props
-        console.log(asset, "stateee")
+const Home = ({ navigation }) => {
         return (
             <View style={{ flex: 1, }}>
                 {/* body */}
@@ -26,14 +13,13 @@ class Home extends React.Component {
                     <AppContent/>
                 </View>
                 {/* Footer */}
-                {/* <View style={{ flex: 1, alignItems:"center" }}>
+                <View style={{ flex: 1, alignItems:"center",position:"absolute",width:"100%",bottom:20 }}>
                 <TouchableOpacity  style={{backgroundColor: "#4FA2FF",elevation:3, justifyContent: "center",width:"80%",height:40,borderRadius:20,justifyContent:"center",alignItems:"center" }}>
                     <Text style={{color:Colors.white}}>GO THERE</Text>
                 </TouchableOpacity>
-                </View> */}
+                </View>
             </View>
         )
-    }
 }
 
 Home['navigationOptions'] = ({ navigation }) => {
@@ -53,26 +39,14 @@ Home['navigationOptions'] = ({ navigation }) => {
             </TouchableOpacity>
         ),
     };
-    // }
 };
-const styles = StyleSheet.create({
-    container: {
-        flex: 1
-    },
-    videoContainer: {
-        // margin: 10
-    }
-})
+
 function mapStateToProps(state) {
     return ({
-        asset: state.root.fetchQueue,
     })
 }
 function mapDispatchToProps(dispatch) {
     return {
-        fetchQueue: (asset) => {
-            dispatch(fetchQueue(asset));
-        },
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

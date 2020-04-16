@@ -60,7 +60,7 @@ export default class RateThisService extends React.Component {
                 </View>
                 <Textarea rowSpan={5} bordered placeholder="Write a review" />
                 <View style={{ marginTop: "5%" }}>
-                    <TouchableOpacity activeOpacity={0.6} style={{ justifyContent: "center",elevation:2, backgroundColor: Colors.secondry, width: "30%",height:35,borderRadius:20 }}>
+                    <TouchableOpacity activeOpacity={0.6} style={{ justifyContent: "center",elevation:3, backgroundColor: Colors.secondry, width: "30%",height:35,borderRadius:20 }}>
                         <Text style={{ alignSelf: "center", color: Colors.white,  }}>Submit</Text>
                     </TouchableOpacity>
                 </View>
