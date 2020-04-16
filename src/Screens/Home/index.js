@@ -7,6 +7,7 @@ import Footer from '../../Components/Footer';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AppContent from '../../Components/AppContent';
 import Video, { ScrollView, Container } from 'react-native-af-video-player'
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 class Home extends React.Component {
 
@@ -25,11 +26,11 @@ class Home extends React.Component {
                     <AppContent/>
                 </View>
                 {/* Footer */}
-                <View style={{ flex: 1, backgroundColor: "brown" }}>
-                <Button rounded info style={{ justifyContent: "center" }}>
-                    <Text>GO THERE</Text>
-                </Button>
-                </View>
+                {/* <View style={{ flex: 1, alignItems:"center" }}>
+                <TouchableOpacity  style={{backgroundColor: "#4FA2FF",elevation:3, justifyContent: "center",width:"80%",height:40,borderRadius:20,justifyContent:"center",alignItems:"center" }}>
+                    <Text style={{color:Colors.white}}>GO THERE</Text>
+                </TouchableOpacity>
+                </View> */}
             </View>
         )
     }

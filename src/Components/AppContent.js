@@ -6,7 +6,9 @@ import Description from './Description';
 import Phone from './Phone';
 import Map from './Map';
 import RateThisService from './RateThisService';
-import RatingAndReviews from './RatingAndReviews';
+import RatingChart from './RatingChart';
+import dummyData from './dummyData';
+import ClientReview from './ClientReview';
 const screenHeight = Math.round(Dimensions.get('window').height);
 
 export default class VideoExample extends React.Component {
@@ -18,15 +20,17 @@ export default class VideoExample extends React.Component {
     render() {
         const { index, url, iSMoreVideo, playPause } = this.state
         const { asset } = this.props
+        console.log(dummyData,"dummyData")
         console.log(asset, "assetasset")
         return (
             <ScrollView style={{ }}>
-                <Title/>
+                <Title dummyData={dummyData}/>
                 <Description/>
                 <Phone/>
                 <Map/>
                 <RateThisService/>
-                <RatingAndReviews/>
+                <RatingChart dummyData={dummyData}/>
+                <ClientReview dummyData={dummyData}/>
                
             </ScrollView>
         )

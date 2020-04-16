@@ -3,6 +3,7 @@ import { Text, StyleSheet, View, TouchableOpacity, Image, ScrollView, Dimensions
 import AntDesign from 'react-native-vector-icons/AntDesign';
 // import Map from './Map';
 const screenHeight = Math.round(Dimensions.get('window').height);
+import { Colors } from '../Const/index';
 
 export default class Phone extends React.Component {
     constructor(props) {
@@ -18,8 +19,8 @@ export default class Phone extends React.Component {
                 <TouchableOpacity
                     activeOpacity={0.6}
                     style={{ flexDirection: "row", alignItems: "center", padding: "2%" }}>
-                    <Image style={{ width: 50, height: 50 }} source={require("../Assets/1.jpg")} />
-                    <Text style={{ marginLeft: "5%" }}>+1(828) 832-4256</Text>
+                    <Image style={{ width: 40, height: 40 }} source={require("../Assets/call.png")} />
+                    <Text style={{ marginLeft: "5%",color: Colors.primary, }}>+1(828) 832-4256</Text>
                 </TouchableOpacity>
         )
     }
