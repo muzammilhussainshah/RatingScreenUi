@@ -21,7 +21,7 @@ export default RatingChart = () => {
                                         <AntDesign
                                             name="star"
                                             size={15}
-                                            style={{ color: "orange" }}
+                                            style={{ color: "#FFB51E" }}
                                         />
                                     </View>
                                 )

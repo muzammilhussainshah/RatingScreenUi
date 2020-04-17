@@ -32,7 +32,9 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
     map: {
-      ...StyleSheet.absoluteFillObject,
+      height: 150,
+      width: '100%',
+      // ...StyleSheet.absoluteFillObject,
     },
   });
   

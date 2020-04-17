@@ -22,8 +22,8 @@ export default class ClientReview extends React.Component {
         const { star } = this.state
         return (
             <View style={{ padding: "3%" }}>
-                <View style={{ flexDirection: "row", flex: 1.5 }}>
-                    <View style={{ flex: 1, }}>
+                <View style={{ flexDirection: "row", flex: 1}}>
+                    <View style={{ flex: 1.5, }}>
                         <View style={{ backgroundColor: "#BC1CEA", width: 42, height: 42, borderRadius: 21, justifyContent: "center", alignItems: "center" }}>
                             <Text style={{ fontSize: 20, color: Colors.white }}>{dummyData.Ratings[0].UserRatingName[0]}</Text>
                         </View>
@@ -47,7 +47,7 @@ export default class ClientReview extends React.Component {
                             <AntDesign
                                 name={"star"}
                                 size={15}
-                                style={{ color: star > i ? "orange" : "#D9D9DE", }}
+                                style={{ color: star > i ? "#FFB51E" : "#D9D9DE", }}
                             />
                         </View>
                         )

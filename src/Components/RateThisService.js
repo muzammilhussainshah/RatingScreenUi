@@ -15,7 +15,7 @@ export default class RateThisService extends React.Component {
         const { star } = this.state
         return (
             <View style={{ padding: "3%", marginTop: "2%" }}>
-                <Text style={{ fontWeight: "bold", fontSize: 16, color: Colors.primary, }}>Rate This Service</Text>
+                <Text style={{  fontSize: 16, color: Colors.primary, }}>Rate This Service</Text>
                 <Text style={{ fontSize: 13, color: Colors.primary, }}>Tell other what you think</Text>
                 <View style={{ flexDirection: "row", justifyContent: "space-between", padding: "5%" }}>
                     {[0, 1, 2, 3, 4].map((v, i) => {
@@ -23,8 +23,8 @@ export default class RateThisService extends React.Component {
                             <TouchableOpacity onPress={() => this.setState({ star: i+1 })}>
                                 <AntDesign
                                     name={star > i ? "star" : "staro"}
-                                    size={40}
-                                    style={{ color: star > i ? "orange" : Colors.primary, }}
+                                    size={25}
+                                    style={{ color: star > i ? "#FFB51E" : Colors.primary, }}
                                 />
                             </TouchableOpacity>
                         )
@@ -32,8 +32,8 @@ export default class RateThisService extends React.Component {
                 </View>
                 <Textarea rowSpan={5} bordered placeholder="Write a review" />
                 <View style={{ marginTop: "5%" }}>
-                    <TouchableOpacity activeOpacity={0.6} style={{ justifyContent: "center", elevation: 3, backgroundColor: Colors.secondry, width: "30%", height: 35, borderRadius: 20 }}>
-                        <Text style={{ alignSelf: "center", color: Colors.white, }}>Submit</Text>
+                    <TouchableOpacity activeOpacity={0.6} style={{ justifyContent: "center", elevation: 1, backgroundColor: Colors.secondry, width: "30%", height: 30, borderRadius: 20 }}>
+                        <Text style={{ alignSelf: "center", color: Colors.white, }}>SUBMIT</Text>
                     </TouchableOpacity>
                 </View>
             </View>

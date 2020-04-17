@@ -12,7 +12,7 @@ import ClientReview from './ClientReview';
 export default AppContent = () => {
     return (
         <ScrollView >
-            <View style={{ paddingBottom: 50 }}>
+            <View style={{ }}>
                 <Title dummyData={dummyData} />
                 <Description />
                 <Phone />

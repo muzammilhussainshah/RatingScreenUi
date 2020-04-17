@@ -9,12 +9,14 @@ const Home = ({ navigation }) => {
         return (
             <View style={{ flex: 1, }}>
                 {/* body */}
-                <View style={{ flex: 9, backgroundColor: "white" }}>
+                <View style={{ flex: 8.6, backgroundColor: "white" }}>
                     <AppContent/>
                 </View>
                 {/* Footer */}
-                <View style={{ flex: 1, alignItems:"center",position:"absolute",width:"100%",bottom:20 }}>
-                <TouchableOpacity  style={{backgroundColor: "#4FA2FF",elevation:3, justifyContent: "center",width:"80%",height:40,borderRadius:20,justifyContent:"center",alignItems:"center" }}>
+                <View style={{ flex: 1.4, alignItems:"center",justifyContent:"center",width:"100%",backgroundColor:"#FCF8F8" }}>
+                <TouchableOpacity 
+                activeOpacity={0.6}
+                style={{backgroundColor: "#57A4FF",elevation:3, justifyContent: "center",width:"80%",height:40,borderRadius:20,justifyContent:"center",alignItems:"center" }}>
                     <Text style={{color:Colors.white}}>GO THERE</Text>
                 </TouchableOpacity>
                 </View>
