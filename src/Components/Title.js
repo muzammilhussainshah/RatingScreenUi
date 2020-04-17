@@ -1,12 +1,10 @@
 import React from 'react'
-import { Text, View, Image, Dimensions, ImageBackground, FlatList } from 'react-native'
+import { Text, View, Image, Dimensions, ImageBackground,  } from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Colors } from '../Const/index';
 const screenHeight = Math.round(Dimensions.get('window').height);
 
-export default class Title extends React.Component {
-    render() {
-        const { dummyData } = this.props
+export default Title = ({ navigation,dummyData }) => {
         return (
             <View style={{elevation: 1, width: "100%", height: screenHeight / 3.5 }}>
                 <ImageBackground resizeMode="cover" style={{ width: "100%", height: screenHeight / 3.5 }} source={require("../Assets/ab.png")} >
@@ -40,8 +38,5 @@ export default class Title extends React.Component {
                     </View>
                 </ImageBackground>
             </View>
-
-
         )
     }
-}

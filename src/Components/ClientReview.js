@@ -1,10 +1,8 @@
 import React from 'react'
-import { Text, StyleSheet, View, TouchableOpacity, Image, ScrollView, Dimensions, ImageBackground } from 'react-native'
-import { Picker, Item } from 'native-base'
+import { Text,  View, TouchableOpacity,  Dimensions,  } from 'react-native'
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Colors } from '../Const/index';
-const screenHeight = Math.round(Dimensions.get('window').height);
 
 export default class ClientReview extends React.Component {
     constructor(props) {
@@ -15,7 +13,6 @@ export default class ClientReview extends React.Component {
     }
     UNSAFE_componentWillMount() {
         const { dummyData } = this.props
-        const { star } = dummyData.Ratings[1].UserRating
         this.setState({
             star: dummyData.Ratings[1].UserRating
         })
@@ -43,41 +40,19 @@ export default class ClientReview extends React.Component {
 
                 <View style={{ paddingVertical: "3%" }}>
                     <View style={{ flexDirection: "row", }}>
-                        <View onPress={() => this.setState({ star: 1 })}>
+
+                    {[0,1,2,3,4].map((v, i) => {
+                        return (
+                            <View>
                             <AntDesign
                                 name={"star"}
                                 size={15}
-                                style={{ color: star > 0 ? "orange" : "#D9D9DE", }}
+                                style={{ color: star > i ? "orange" : "#D9D9DE", }}
                             />
                         </View>
-                        <View onPress={() => this.setState({ star: 2 })}>
-                            <AntDesign
-                                name={"star"}
-                                size={15}
-                                style={{ color: star > 1 ? "orange" : "#D9D9DE", }}
-                            />
-                        </View>
-                        <View onPress={() => this.setState({ star: 3 })}>
-                            <AntDesign
-                                name={"star"}
-                                size={15}
-                                style={{ color: star > 2 ? "orange" : "#D9D9DE", }}
-                            />
-                        </View>
-                        <View onPress={() => this.setState({ star: 4 })}>
-                            <AntDesign
-                                name={"star"}
-                                size={15}
-                                style={{ color: star > 3 ? "orange" : "#D9D9DE", }}
-                            />
-                        </View>
-                        <View onPress={() => this.setState({ star: 5 })}>
-                            <AntDesign
-                                name={"star"}
-                                size={15}
-                                style={{ color: star > 4 ? "orange" : "#D9D9DE", }}
-                            />
-                        </View>
+                        )
+                    })}
+
                         <View style={{ paddingHorizontal: 15 }}>
                             <Text style={{ color: Colors.primary, }}>{dummyData.Ratings[1].RatingDate}</Text>
                         </View>

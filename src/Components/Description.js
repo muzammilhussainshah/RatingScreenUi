@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View, } from 'react-native'
 import { Colors } from '../Const/index';
 
-export default Description = ({ navigation }) => {
+export default Description = () => {
     return (
         <View style={{ padding: "3%" }}>
             <Text style={{ color: Colors.primary, fontWeight: "bold", fontSize: 16 }}>Description</Text>
