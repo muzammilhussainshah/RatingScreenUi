@@ -24,7 +24,7 @@ export default class RateThisService extends React.Component {
                                 <AntDesign
                                     name={star > i ? "star" : "staro"}
                                     size={25}
-                                    style={{ color: star > i ? "#FFB51E" : Colors.primary, }}
+                                    style={{ color: star > i ? "#FFB900" : Colors.primary, }}
                                 />
                             </TouchableOpacity>
                         )

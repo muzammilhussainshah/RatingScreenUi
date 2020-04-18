@@ -6,27 +6,31 @@ import AppContent from '../../Components/AppContent';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Home = ({ navigation }) => {
-        return (
-            <View style={{ flex: 1, }}>
-                {/* body */}
-                <View style={{ flex: 8.6, backgroundColor: "white" }}>
-                    <AppContent/>
-                </View>
-                {/* Footer */}
-                <View style={{ flex: 1.4, alignItems:"center",justifyContent:"center",width:"100%",backgroundColor:"#FCF8F8" }}>
-                <TouchableOpacity 
-                activeOpacity={0.6}
-                style={{backgroundColor: "#57A4FF",elevation:3, justifyContent: "center",width:"80%",height:40,borderRadius:20,justifyContent:"center",alignItems:"center" }}>
-                    <Text style={{color:Colors.white}}>GO THERE</Text>
-                </TouchableOpacity>
-                </View>
+    return (
+        <View style={{ flex: 1, }}>
+            {/* body */}
+            <View style={{ flex: 8.6, backgroundColor: "white" }}>
+                <AppContent />
             </View>
-        )
+            {/* Footer */}
+            <View style={{ flex: 1.4, alignItems: "center", justifyContent: "center", width: "100%", backgroundColor: "#fff" }}>
+                <TouchableOpacity
+                    activeOpacity={0.6}
+                    style={{
+                        backgroundColor: "#57A4FF", justifyContent: "center", width: "80%", height: 50, borderRadius: 50, justifyContent: "center",
+                        alignItems: "center",
+                        elevation: 5,
+                    }}>
+                    <Text style={{ color: Colors.white }}>GO THERE</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+    )
 }
 
 Home['navigationOptions'] = ({ navigation }) => {
     return {
-        title: 'Big Mac@ss',
+        headerTitle: <Text style={{fontSize:16}}>Big Mac@</Text>,
         headerStyle: {
             elevation: 0,
             shadowColor: 'transparent',

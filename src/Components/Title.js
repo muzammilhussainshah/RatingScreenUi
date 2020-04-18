@@ -12,7 +12,7 @@ export default Title = ({ navigation, dummyData }) => {
                     <View style={{paddingHorizontal:"5%"}}>
                         <Image resizeMode="contain" style={{ height: 40, width: 40, }} source={require("../Assets/Image17.png")} />
                         {/* <View style={{ }}> */}
-                        <Text style={{ fontWeight: "bold", fontSize: 22, color: Colors.primary, marginTop: 5 }}>Double Quarter Pounder@ {"\n"}with Cheese</Text>
+                        <Text style={{ fontWeight: "bold", fontSize: 22, color: Colors.primary, marginTop: 5, }}>Double Quarter Pounder@ {"\n"}with Cheese</Text>
                         {/* </View> */}
                         <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5 }}>
                             <View>
@@ -26,7 +26,7 @@ export default Title = ({ navigation, dummyData }) => {
                                             <AntDesign
                                                 name="star"
                                                 size={12}
-                                                style={{ color: dummyData.Services[0].AverageRatings > i ? "#FFB51E" : "#FFF8F5" }}
+                                                style={{ color: dummyData.Services[0].AverageRatings > i ? "#FFB900" : "#FFF8F5" }}
                                             />
                                         </View>
                                     )

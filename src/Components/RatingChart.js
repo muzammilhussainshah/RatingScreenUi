@@ -5,7 +5,7 @@ import { Colors } from '../Const/index';
 
 export default RatingChart = () => {
     return (
-        <View style={{ padding: "3%", }}>
+        <View style={{ paddingHorizontal: "3%", }}>
             <Text style={{ fontWeight: "bold", fontSize: 16, color: Colors.primary, }}>Rating and reviews</Text>
             <View style={{ flex: 1, flexDirection: "row" }}>
                 <View style={{ flex: 5, alignItems: "flex-end", }}>
@@ -20,8 +20,8 @@ export default RatingChart = () => {
                                     <View>
                                         <AntDesign
                                             name="star"
-                                            size={15}
-                                            style={{ color: "#FFB51E" }}
+                                            size={12}
+                                            style={{ color: "#FFB900" }}
                                         />
                                     </View>
                                 )

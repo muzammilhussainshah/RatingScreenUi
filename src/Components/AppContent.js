@@ -11,8 +11,8 @@ import ClientReview from './ClientReview';
 
 export default AppContent = () => {
     return (
-        <ScrollView >
-            <View style={{ }}>
+        <ScrollView style={{}} >
+            {/* <View style={{ }}> */}
                 <Title dummyData={dummyData} />
                 <Description />
                 <Phone />
@@ -20,7 +20,7 @@ export default AppContent = () => {
                 <RateThisService />
                 <RatingChart dummyData={dummyData} />
                 <ClientReview dummyData={dummyData} />
-            </View>
+            {/* </View> */}
         </ScrollView>
     )
 }
